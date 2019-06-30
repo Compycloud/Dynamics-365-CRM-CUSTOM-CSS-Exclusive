@@ -1,5 +1,5 @@
 /* i really want this to be global */
-/* 2019.06.11 1.0.6.9 */
+/* 2019.06.11 1.0.7.0 */
 .stdTable .ms-crm-Setting-ContextHeader-Title, body.hideUserProfile, .stage, #dashboardListDiv, div.stdTable, div#crmRibbonManager, .ms-crm-control-SideStrip, DIV.ms-crm-InlineTabContainer-Read, DIV.ms-crm-InlineTabContainer-Read-SLAKpiQuickView, TR.ms-crm-Form-HeaderContainer, div.ms-crm-Form-Area.ms-crm-Form-Area-position, DIV.ms-crm-Form-FooterContainer, DIV.ms-crm-Form-AreaContainer, DIV.ms-crm-Form-AreaContainerQuick, div#rofContainer, div.ms-crm-Form-HeaderContainer, .refresh-form div.ms-crm-Form-HeaderContainer, .refresh-form-footer table, .ms-crm-List-Title, table.ms-crm-Grid-Control-Bar, div#rofContainer div.ms-crm-Form-Container, .ms-crm-Dashboard-Area DIV.ms-crm-InlineTab {
     background-color: #F8F8F8;
 }
@@ -1249,6 +1249,26 @@ div.crmContentPanel[currentcontentid="contentIFrame1"] {
     margin-left: 0px !important;
     top: 36px !important;
 }
+#homepageTableCell {
+    margin-left: 5px !important;
+    top: 40px !important;
+}
+#homepageTableCell .cc-grid .cc-grid-groupby {
+    padding-top: 0px;
+    padding-bottom: 2px;
+}
+#gridControlBar tr.ms-crm-list-TitleFilter {
+    padding-left: 8px;
+    height: 30px;
+    margin-top: -27px;
+    position: absolute;
+    width: 300px;
+    left: 400px;
+}
+#gridControlBar SELECT.ms-crm-SelectBox {
+    width: 100%;
+    width: 400px;
+}
     .stdTable .label {
     margin-left: 10px;
 }
@@ -1561,24 +1581,4 @@ max-width: 100%;
 .ms-crm-Form-Title-Position {
 max-width: 100%;
 }
-}
-#homepageTableCell {
-    margin-left: 5px !important;
-    top: 40px !important;
-}
-#homepageTableCell .cc-grid .cc-grid-groupby {
-    padding-top: 0px;
-    padding-bottom: 2px;
-}
-#gridControlBar tr.ms-crm-list-TitleFilter {
-    padding-left: 8px;
-    height: 30px;
-    margin-top: -27px;
-    position: absolute;
-    width: 300px;
-    left: 400px;
-}
-#gridControlBar SELECT.ms-crm-SelectBox {
-    width: 100%;
-    width: 400px;
 }
