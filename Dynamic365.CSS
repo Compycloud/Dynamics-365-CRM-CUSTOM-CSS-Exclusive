@@ -1,5 +1,5 @@
 /* i really want this to be global */
-/* 2019.06.11 1.0.6.8 */
+/* 2019.06.11 1.0.6.9 */
 .stdTable .ms-crm-Setting-ContextHeader-Title, body.hideUserProfile, .stage, #dashboardListDiv, div.stdTable, div#crmRibbonManager, .ms-crm-control-SideStrip, DIV.ms-crm-InlineTabContainer-Read, DIV.ms-crm-InlineTabContainer-Read-SLAKpiQuickView, TR.ms-crm-Form-HeaderContainer, div.ms-crm-Form-Area.ms-crm-Form-Area-position, DIV.ms-crm-Form-FooterContainer, DIV.ms-crm-Form-AreaContainer, DIV.ms-crm-Form-AreaContainerQuick, div#rofContainer, div.ms-crm-Form-HeaderContainer, .refresh-form div.ms-crm-Form-HeaderContainer, .refresh-form-footer table, .ms-crm-List-Title, table.ms-crm-Grid-Control-Bar, div#rofContainer div.ms-crm-Form-Container, .ms-crm-Dashboard-Area DIV.ms-crm-InlineTab {
     background-color: #F8F8F8;
 }
@@ -138,6 +138,9 @@ div.ms-crm-Inline-EditIcon, div.recalculate {
     max-height: 50px;
 }
 /*crmTopBar*/
+div.ms-crm-TopBarContainer.newNavBarMode {
+    background: #000;
+}
 #perceivedRibbonManager .ms-crm-CommandBar-Menu {
     background-color: #000;
 }
@@ -301,6 +304,26 @@ li.ms-crm-CommandBar-SplitButton A.ms-crm-Menu-Label, li.ms-crm-CommandBar-Split
 }
 .ui-dialog #Mscrm_DashboardTab_Management_NewMenu SPAN.ms-crm-CommandBar-Menu {
     color: #fff;
+}
+/*moreCommandsList*/
+DIV.ui-flyout-dialog-moreCommands #moreCommandsList SPAN.ms-crm-CommandBar-Menu {
+    color: #fff;
+}
+DIV.ui-flyout-dialog-moreCommands #moreCommandsList SPAN.ms-crm-Menu-Label {
+    color: #fff;
+}
+DIV.ui-flyout-dialog-moreCommands #moreCommandsList li.ms-crm-CommandBar-SplitButton SPAN.ms-crm-Menu-Label {
+    background: #000;
+    border-color: #000;
+}
+DIV.ui-flyout-dialog-moreCommands #moreCommandsList li.ms-crm-CommandBarItem {
+    background: #000;
+}
+DIV.ui-flyout-dialog-moreCommands #moreCommandsList .ms-cui-menusection-title {
+    border-bottom: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
 }
 /*contextualActionBar*/
 #contextualActionBar div.ms-crm-TopBarContainer ul.ms-crm-CommandBar-Menu li.ms-crm-CommandBarItem, #contextualActionBar {
@@ -913,6 +936,16 @@ div.wall {
 #notesWall #firstRunContent .panel .text {
     padding-left: 15px;
     font-size: 15px;
+}
+/**areaActivities ms-crm-AreaPage*/
+.ms-crm-AreaPage div.ms-crm-Form-AssociatedGrid-Layout-Lite {
+    padding-top: 0px;
+}
+.ms-crm-AreaPage #appGridQueryFilterContainer_crmGrid_Incident_ActivityPointers {
+    height: 60px !important;
+}
+.ms-crm-Form-Area .ms-crm-Form-AssociatedGrid-Layout-Lite .ms-crm-grid-databodycontainer {
+    height: 90%;
 }
 /* #crmFormFooter */
 .ms-crm-ImageStrip-inlineedit_locked {
@@ -1528,4 +1561,24 @@ max-width: 100%;
 .ms-crm-Form-Title-Position {
 max-width: 100%;
 }
+}
+#homepageTableCell {
+    margin-left: 5px !important;
+    top: 40px !important;
+}
+#homepageTableCell .cc-grid .cc-grid-groupby {
+    padding-top: 0px;
+    padding-bottom: 2px;
+}
+#gridControlBar tr.ms-crm-list-TitleFilter {
+    padding-left: 8px;
+    height: 30px;
+    margin-top: -27px;
+    position: absolute;
+    width: 300px;
+    left: 400px;
+}
+#gridControlBar SELECT.ms-crm-SelectBox {
+    width: 100%;
+    width: 400px;
 }
