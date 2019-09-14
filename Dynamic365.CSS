@@ -1,5 +1,5 @@
 /* i really want this to be global */
-/* 2019.06.11 1.0.7.1 */
+/* 2019.09.15 1.0.7.6 */
 .stdTable .ms-crm-Setting-ContextHeader-Title, body.hideUserProfile, .stage, #dashboardListDiv, div.stdTable, div#crmRibbonManager, .ms-crm-control-SideStrip, DIV.ms-crm-InlineTabContainer-Read, DIV.ms-crm-InlineTabContainer-Read-SLAKpiQuickView, TR.ms-crm-Form-HeaderContainer, div.ms-crm-Form-Area.ms-crm-Form-Area-position, DIV.ms-crm-Form-FooterContainer, DIV.ms-crm-Form-AreaContainer, DIV.ms-crm-Form-AreaContainerQuick, div#rofContainer, div.ms-crm-Form-HeaderContainer, .refresh-form div.ms-crm-Form-HeaderContainer, .refresh-form-footer table, .ms-crm-List-Title, table.ms-crm-Grid-Control-Bar, div#rofContainer div.ms-crm-Form-Container, .ms-crm-Dashboard-Area DIV.ms-crm-InlineTab {
     background-color: #F8F8F8;
 }
@@ -165,6 +165,7 @@ div.ms-crm-TopBarContainer.newNavBarMode {
 #crmRibbonManager li.ms-crm-CommandBar-Menu {
     margin-top: 0px;
     margin-bottom: 0px;
+    cursor: pointer;
 }
 #crmRibbonManager {
     /* height: 30px !important; */
@@ -231,6 +232,9 @@ div.ms-crm-TopBarContainer.newNavBarMode {
 }
 #crmRibbonManager li.ms-crm-CommandBar-SplitButton {
     border: 0px;
+}
+#crmRibbonManager SPAN.ms-crm-Menu-Label {
+    cursor: pointer;
 }
 #crmRibbonManager .ms-crm-CommandBar-Menu a, #crmRibbonManager .ms-crm-CommandBar-Menu a:link img, #crmRibbonManager .ms-crm-CommandBar-Menu a:link, #crmRibbonManager .ms-crm-CommandBar-Menu a:visited img, #crmRibbonManager .ms-crm-CommandBar-Menu a:visited, #crmRibbonManager .ms-crm-CommandBar-Menu a:active img, #crmRibbonManager .ms-crm-CommandBar-Menu a:active, #crmRibbonManager .ms-crm-CommandBar-Menu a:hover img, #crmRibbonManager .ms-crm-CommandBar-Menu a:hover a:hover img, #crmRibbonManager .ms-crm-CommandBar-Menu input, #crmRibbonManager .ms-crm-CommandBar-Menu textarea, #crmRibbonManager .ms-crm-CommandBar-Menu select {
     color: #fff;
@@ -311,6 +315,7 @@ DIV.ui-flyout-dialog-moreCommands #moreCommandsList SPAN.ms-crm-CommandBar-Menu 
 }
 DIV.ui-flyout-dialog-moreCommands #moreCommandsList SPAN.ms-crm-Menu-Label {
     color: #fff;
+    cursor: pointer;
 }
 DIV.ui-flyout-dialog-moreCommands #moreCommandsList li.ms-crm-CommandBar-SplitButton SPAN.ms-crm-Menu-Label {
     background: #000;
@@ -1200,6 +1205,24 @@ div#crmMasthead .navDropDownMenu {
 .ms-crm-dashboardFirstCell, .ms-crm-dashboardEvenCell, .ms-crm-dashboardOddCell {
     height: 250px !important;
 }
+.wall .wallContainer {
+    margin-left: 0px;
+    height: 80%;
+    overflow-y: scroll;
+}
+#WebResource_PersonalWall_d {
+    /* overflow: hidden; */
+    scrollbar-width: none; /*Firefox 64*/
+    height: 2100px !important;
+    margin-bottom: 0px;
+}
+#WebResource_PersonalWall_d {
+    height: 100% !important;
+    max-height: 100% !important;
+}
+#WebResource_PersonalWall {
+    position: unset;
+}
 #CrmChart {
     height: 100%;
     width: 100%;
@@ -1233,6 +1256,9 @@ div#crmMasthead .navDropDownMenu {
 .wall .post div.postActions .postActionsWrapper, .recordWall .post div.postActions .postActionsWrapper {
     /* background: transparent; Has to be to hide long Titels */
 }
+.wall .wallContainer {
+    height: 100% !important;
+}
 #notescontrol_d {
     height: unset !important;
     display: contents;
@@ -1241,11 +1267,49 @@ div#crmMasthead .navDropDownMenu {
     height: unset !important;
     display: contents;
 }
-/* #crmContentPanel */   
+/* #crmContentPanel */
+body.hideUserProfile {
+    min-width: unset;
+}
+.hideUserProfile .wallTable {
+    min-width: unset !important;
+}
+div.crmContentPanel {
+    top: 68px !important;
+}
+.wallTable .wall .header .postArea {
+    min-height: 35px;
+}
+.wallTable #wallElementContainer #wall #header .filters .filter a {
+    font-weight: 400;
+    font-size: 10px;
+    color: #000 !important;
+    text-transform: uppercase;
+}
+.wallTable #wallElementContainer #wall #header{
+    padding: 20px 0px 0px 20px;
+}
+.wallTable #wallElementContainer #wall .post {
+    border-bottom: unset;
+    padding-right: 3px;
+}
+.wallTable #wallElementContainer #wall .post.first {
+    border-bottom: 0px;
+}
+.wallTable #wallElementContainer #wall .post.last {
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.wallTable #wallElementContainer #wall #wallContainer {
+    padding: 0px 0px 0px 10px;
+}
+.wallTable #wallElementContainer #wall #wallContainer .imageAction.lastAction img {
+    width: 20px;
+    height: auto;
+}
 div.crmContentPanel[currentcontentid="contentIFrame1"] {
     top: 70px !important;
 }
-    .stdTable #homepageTableCell {
+.stdTable #homepageTableCell {
     margin-left: 0px !important;
     top: 36px !important;
 }
