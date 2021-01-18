@@ -1,5 +1,5 @@
 /* i really want this to be global */
-/* 2019.09.15 1.0.7.6 */
+/* 2020.12.20 1.1.0.0 */
 .stdTable .ms-crm-Setting-ContextHeader-Title, body.hideUserProfile, .stage, #dashboardListDiv, div.stdTable, div#crmRibbonManager, .ms-crm-control-SideStrip, DIV.ms-crm-InlineTabContainer-Read, DIV.ms-crm-InlineTabContainer-Read-SLAKpiQuickView, TR.ms-crm-Form-HeaderContainer, div.ms-crm-Form-Area.ms-crm-Form-Area-position, DIV.ms-crm-Form-FooterContainer, DIV.ms-crm-Form-AreaContainer, DIV.ms-crm-Form-AreaContainerQuick, div#rofContainer, div.ms-crm-Form-HeaderContainer, .refresh-form div.ms-crm-Form-HeaderContainer, .refresh-form-footer table, .ms-crm-List-Title, table.ms-crm-Grid-Control-Bar, div#rofContainer div.ms-crm-Form-Container, .ms-crm-Dashboard-Area DIV.ms-crm-InlineTab {
     background-color: #F8F8F8;
 }
@@ -166,6 +166,10 @@ div.ms-crm-TopBarContainer.newNavBarMode {
     margin-top: 0px;
     margin-bottom: 0px;
     cursor: pointer;
+}
+#crmRibbonManager ul.ms-crm-CommandBar-Menu :not(ul.ms-crm-AssociatedGridCommandBar-Menu) {
+    margin-top: 0px;
+    margin-left: 5px;
 }
 #crmRibbonManager {
     /* height: 30px !important; */
