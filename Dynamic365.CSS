@@ -1,5 +1,5 @@
 /* i really want this to be global */
-/* 2020.12.20 1.1.0.0 */
+/* 2021.02.25 1.1.0.1 */
 .stdTable .ms-crm-Setting-ContextHeader-Title, body.hideUserProfile, .stage, #dashboardListDiv, div.stdTable, div#crmRibbonManager, .ms-crm-control-SideStrip, DIV.ms-crm-InlineTabContainer-Read, DIV.ms-crm-InlineTabContainer-Read-SLAKpiQuickView, TR.ms-crm-Form-HeaderContainer, div.ms-crm-Form-Area.ms-crm-Form-Area-position, DIV.ms-crm-Form-FooterContainer, DIV.ms-crm-Form-AreaContainer, DIV.ms-crm-Form-AreaContainerQuick, div#rofContainer, div.ms-crm-Form-HeaderContainer, .refresh-form div.ms-crm-Form-HeaderContainer, .refresh-form-footer table, .ms-crm-List-Title, table.ms-crm-Grid-Control-Bar, div#rofContainer div.ms-crm-Form-Container, .ms-crm-Dashboard-Area DIV.ms-crm-InlineTab {
     background-color: #F8F8F8;
 }
@@ -488,10 +488,12 @@ DIV.ms-crm-HeaderTileElement {
 .processControlContainer .ms-crm-Inline-Value div.ms-crm-Inline-GradientMask {
     right: 1px;
 }
-.processControlContainer .ms-crm-Inline-Value.ms-crm-Inline-EditHintState
-{
-padding-right: 4px;
-padding-left: 4px;
+.processControlContainer .ms-crm-Inline-Value.ms-crm-Inline-EditHintState {
+    padding-right: 4px;
+    padding-left: 4px;
+}
+.processControlContainer .processStageContainer.completedStage .processStageTailContainer div.stageContentArea .stageNameContent {
+    color: #ffffff !important;
 }
 /** tdAreas */
 /*** crmFormTabContainer */
@@ -1384,10 +1386,6 @@ div.crmContentPanel[currentcontentid="contentIFrame1"] {
     height: 30px;
 }
 /* processStagesContainer */
-    .processControlContainer div.processHeaderArea {
-    min-width: 100%;
-    height: 27px;
-}
     #processHeaderContainer {
     overflow: scroll;
         overflow-y: hidden;
@@ -1400,13 +1398,9 @@ div.crmContentPanel[currentcontentid="contentIFrame1"] {
     height: 44px;
     overflow-y: hidden;
 }
-    #processStagesScrollRegion {
-    min-width: 100% !important;
-    margin-left: 0px !important;
-}
-    .processStageContainer.layer0.hasNext.activeStage {
-    min-width: auto !important;
-    width: auto !important;
+    .processControlContainer div.processHeaderArea {
+    min-width: 100%;
+    height: 27px;
 }
     .processControlContainer .scrollButton {
     top: -20px;
@@ -1419,6 +1413,10 @@ div.crmContentPanel[currentcontentid="contentIFrame1"] {
 }
     .processControlContainer span.stageActionNextStageText {
     display: none;
+}
+    .processControlContainer .processStageContainer.unselectedStage:not(.completedStage.abandonedStage) div.processStageTailContainer .stageContentArea .stageContent span.stageNameContent {
+        color: #ffffff;
+        left: 3px;
 }
     .processControlContainer div.stageCollapsibleButton {
     font-size: 30px;
@@ -1487,6 +1485,14 @@ div.crmContentPanel[currentcontentid="contentIFrame1"] {
     position: relative;
     top: -5px;
     left: -8px;
+}
+    .processStageContainer.layer0.hasNext.activeStage {
+    min-width: auto !important;
+    width: auto !important;
+}
+    #processStagesScrollRegion {
+    min-width: 100% !important;
+    margin-left: 0px !important;
 }
     #processDuration {
     display: contents !important;
@@ -1629,7 +1635,7 @@ div.wall {
     top: 0px;
     margin-left: 0px;
 }
-    
+
 }
 @media (max-width: 500px) {
 .ms-crm-Form-Breadcrumb {
