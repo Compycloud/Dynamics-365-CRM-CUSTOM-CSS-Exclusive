@@ -430,7 +430,10 @@ DIV.ms-crm-HeaderTileElement {
   border-left: 12px solid #1d6724;
 }
 .processControlContainer .processStageContainer div.globalActiveStageFlag {
-    margin-bottom: -30px;
+    margin-bottom: -25px;
+}
+.processControlContainer .hasNext div.processStageHeadContainer {
+  padding-right: 10px;
 }
 .processControlContainer .processStagesContainer {
     height: 30px;
