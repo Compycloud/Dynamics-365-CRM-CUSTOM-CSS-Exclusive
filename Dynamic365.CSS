@@ -1,5 +1,5 @@
 /* i really want this to be global */
-/* 2022.03.14 1.1.0.2 */
+/* 2022.03.14 1.1.0.3 */
 .stdTable .ms-crm-Setting-ContextHeader-Title, body.hideUserProfile, .stage, #dashboardListDiv, div.stdTable, div#crmRibbonManager, .ms-crm-control-SideStrip, DIV.ms-crm-InlineTabContainer-Read, DIV.ms-crm-InlineTabContainer-Read-SLAKpiQuickView, TR.ms-crm-Form-HeaderContainer, div.ms-crm-Form-Area.ms-crm-Form-Area-position, DIV.ms-crm-Form-FooterContainer, DIV.ms-crm-Form-AreaContainer, DIV.ms-crm-Form-AreaContainerQuick, div#rofContainer, div.ms-crm-Form-HeaderContainer, .refresh-form div.ms-crm-Form-HeaderContainer, .refresh-form-footer table, .ms-crm-List-Title, table.ms-crm-Grid-Control-Bar, div#rofContainer div.ms-crm-Form-Container, .ms-crm-Dashboard-Area DIV.ms-crm-InlineTab {
     background-color: #F8F8F8;
 }
@@ -1612,7 +1612,6 @@ DIV.ui-flyout-dialog-moreCommands #moreCommandsList li.ms-crm-CommandBarItem {
     min-width: 100% !important;
     width: 100% !important;
     overflow: scroll;
-    overflow-y: scroll;
     overflow-y: scroll;
     overflow-y: hidden;
 }
