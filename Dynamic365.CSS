@@ -1,5 +1,5 @@
 /* i really want this to be global */
-/* 2021.02.25 1.1.0.1 */
+/* 2022.03.14 1.1.0.2 */
 .stdTable .ms-crm-Setting-ContextHeader-Title, body.hideUserProfile, .stage, #dashboardListDiv, div.stdTable, div#crmRibbonManager, .ms-crm-control-SideStrip, DIV.ms-crm-InlineTabContainer-Read, DIV.ms-crm-InlineTabContainer-Read-SLAKpiQuickView, TR.ms-crm-Form-HeaderContainer, div.ms-crm-Form-Area.ms-crm-Form-Area-position, DIV.ms-crm-Form-FooterContainer, DIV.ms-crm-Form-AreaContainer, DIV.ms-crm-Form-AreaContainerQuick, div#rofContainer, div.ms-crm-Form-HeaderContainer, .refresh-form div.ms-crm-Form-HeaderContainer, .refresh-form-footer table, .ms-crm-List-Title, table.ms-crm-Grid-Control-Bar, div#rofContainer div.ms-crm-Form-Container, .ms-crm-Dashboard-Area DIV.ms-crm-InlineTab {
     background-color: #F8F8F8;
 }
@@ -417,6 +417,18 @@ DIV.ms-crm-HeaderTileElement {
     margin-right: 0px !important;
 }
 /*processControlContainer */
+.processControlContainer .processStageContainer.completedStage .processStageTailContainer div.stageContentArea::after {
+  border-left: 12px solid #2d963e;
+}
+.processControlContainer .processStageContainer .processStageTailContainer div.stageContentArea::before {
+  left: -10px;
+}
+.processControlContainer .processStageContainer.selectedStage .processStageTailContainer div.stageContentArea::after {
+    right: -10px;
+}
+.processControlContainer .processStageContainer.completedStage .processStageTailContainer div.stageContentArea:hover::after {
+  border-left: 12px solid #1d6724;
+}
 .processControlContainer .processStageContainer div.globalActiveStageFlag {
     margin-bottom: -30px;
 }
