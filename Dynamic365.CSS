@@ -949,8 +949,7 @@ div.wall {
     width: 25px;
     height: 25px;
     margin-left: 5px;
-    -webkit-filter: opacity(.5) drop-shadow(0 0 0 #74e41a);
-    filter: opacity(.5) drop-shadow(0 0 0 #74e41a);
+    filter: invert(40%) sepia(7%) saturate(3713%) hue-rotate(75deg) brightness(82%) contrast(106%);
 }
 .expandedAttributeDescription {
     height: 400px;
