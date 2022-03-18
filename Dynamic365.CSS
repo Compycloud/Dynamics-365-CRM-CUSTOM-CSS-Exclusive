@@ -914,7 +914,7 @@ div.wall {
     height: 25px;
     margin-left: 5px;
 }
-.acwall .post[statecode="Completed"] .iconThumbnail a img {
+.acwall .post .iconThumbnail a img {
     margin-top: 14px;
     border: none;
     cursor: pointer;
@@ -931,6 +931,7 @@ div.wall {
     width: 25px;
     height: 25px;
     margin-left: 5px;
+    filter: invert(40%) sepia(7%) saturate(3713%) hue-rotate(75deg) brightness(82%) contrast(106%);
 }
 .acwall .post[statecode="Canceled"] .iconThumbnail a img {
     margin-top: 14px;
@@ -940,6 +941,7 @@ div.wall {
     width: 25px;
     height: 25px;
     margin-left: 5px;
+    filter: invert(24%) sepia(53%) saturate(5203%) hue-rotate(351deg) brightness(74%) contrast(91%);
 }
 .acwall .post[statecode="Completed"] .iconThumbnail a img {
     margin-top: 14px;
